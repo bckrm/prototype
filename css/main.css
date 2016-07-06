@@ -1,3 +1,6 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 /*CSS Reset*/
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
@@ -8,8 +11,46 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   box-sizing: border-box;
 }
 
+h1, .h1 {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: .25em;
+}
+
 header {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
   background: url(/assets/img/hero.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  padding-top: 1.5em;
+}
+
+#logo {
+  flex-grow: 2;
+  padding-left: 1em;
+  font-weight: normal;
+}
+
+header a:hover {
+  background-color: #C6C6D0;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  padding-right: 1em;
+}
+
+li {
+  flex-direction: row;
+  flex-grow: 1;
+  list-style: none;
+  text-align: right;
+  font-size: 1.5em;
 }
