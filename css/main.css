@@ -13,7 +13,10 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 body {
   font: 100%/150% 'Open Sans', sans-serif;
+}
 
+h1, h2, h3 {
+  font-weight: normal;
 }
 
 h1, .h1 {
@@ -35,6 +38,7 @@ header {
 
 .logo, nav {
   flex: 1;
+  text-align: center;
 }
 
 header a:hover {
@@ -50,7 +54,7 @@ nav ul {
 nav li {
   flex-grow: 1;
   list-style: none;
-  text-align: right;
+  text-align: center;
   font-size: 1.5em;
 }
 
@@ -58,6 +62,10 @@ nav li {
   margin: auto auto 4em;
   max-width: 32em;
   text-align: center;
+}
+
+.hero h1 {
+  margin: 1em;
 }
 
 .wrapper {
@@ -85,6 +93,10 @@ rect, line {
 
   header {
     flex-direction: row;
+  }
+
+  .logo {
+    text-align: left;
   }
 
 }
