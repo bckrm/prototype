@@ -5,23 +5,19 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+body {
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
 
 h1, .h1 {
   font-size: 2em;
-}
-
-h2 {
-  font-weight: normal;
 }
 
 a {
@@ -32,12 +28,13 @@ a {
 
 header {
   display: flex;
+  flex-direction: column;
   padding-top: 1.5em;
+  margin: 0 1em;
 }
 
-#logo {
-  flex-grow: 2;
-  padding-left: 1em;
+.logo, nav {
+  flex: 1;
 }
 
 header a:hover {
@@ -45,13 +42,12 @@ header a:hover {
   border-radius: 5px;
 }
 
-ul {
+nav ul {
   display: flex;
-  padding-right: 1em;
+
 }
 
-li {
-  flex-direction: column;
+nav li {
   flex-grow: 1;
   list-style: none;
   text-align: right;
@@ -77,6 +73,12 @@ li {
 .main-content {
   width: 85%;
   margin: 0 auto;
+}
+
+rect, line {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 5;
 }
 
 @media (min-width: 32em){
