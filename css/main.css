@@ -5,20 +5,22 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 * {
   box-sizing: border-box;
 }
 
-h1, .h1 {
-  font-size: 2em;
+body {
+  font: 100%/150% 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
   font-weight: normal;
 }
 
-h2 {
-  font-weight: normal;
+h1, .h1 {
+  font-size: 2em;
 }
 
 a {
@@ -28,19 +30,15 @@ a {
 }
 
 header {
-  font-family: 'Open Sans', sans-serif;
   display: flex;
+  flex-direction: column;
   padding-top: 1.5em;
+  margin: 0 1em;
 }
 
-nav {
-
-}
-
-#logo {
-  flex-grow: 2;
-  padding-left: 1em;
-  font-weight: normal;
+.logo, nav {
+  flex: 1;
+  text-align: center;
 }
 
 header a:hover {
@@ -48,23 +46,26 @@ header a:hover {
   border-radius: 5px;
 }
 
-ul {
+nav ul {
   display: flex;
-  padding-right: 1em;
+
 }
 
-li {
-  flex-direction: row;
+nav li {
   flex-grow: 1;
   list-style: none;
-  text-align: right;
+  text-align: center;
   font-size: 1.5em;
 }
 
 .hero {
-  margin: auto;
+  margin: auto auto 4em;
   max-width: 32em;
   text-align: center;
+}
+
+.hero h1 {
+  margin: 1em;
 }
 
 .wrapper {
@@ -74,4 +75,28 @@ li {
   display: flex;
   flex-direction: column;
   margin: 0;
+  color: white;
+}
+
+.main-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+rect, line {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 5;
+}
+
+@media (min-width: 32em){
+
+  header {
+    flex-direction: row;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
 }
