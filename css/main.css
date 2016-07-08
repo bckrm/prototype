@@ -12,8 +12,8 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
+  font: 100%/150% 'Open Sans', sans-serif;
+
 }
 
 h1, .h1 {
@@ -83,6 +83,8 @@ rect, line {
 
 @media (min-width: 32em){
 
-
+  header {
+    flex-direction: row;
+  }
 
 }
