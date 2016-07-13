@@ -84,7 +84,7 @@ footer img {
 }
 
 .wrapper {
-  background: url(/assets/img/hero.jpg) no-repeat center center fixed;
+  background: url(/assets/img/hero.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
   display: flex;
