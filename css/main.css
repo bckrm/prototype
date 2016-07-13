@@ -1,3 +1,6 @@
+/*min-width and flex wrap on blog posts*/
+
+
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
@@ -17,10 +20,7 @@ body {
 
 h1, h2, h3 {
   font-weight: normal;
-}
-
-h1, .h1 {
-  font-size: 2em;
+  margin: 1em 0;
 }
 
 a {
@@ -41,7 +41,7 @@ header {
   text-align: center;
 }
 
-header a:hover {
+nav a:hover {
   background-color: #C6C6D0;
   border-radius: 5px;
 }
@@ -64,8 +64,8 @@ nav li {
   text-align: center;
 }
 
-.hero h1 {
-  margin: 1em;
+.recent {
+  background-color: #CFCFD1;
 }
 
 .wrapper {
@@ -79,8 +79,32 @@ nav li {
 }
 
 .main-content {
-  width: 85%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 8em auto;
+}
+
+.blog-wrapper {
+  margin: 2em auto;
+  border-bottom: 1px solid black;
+  padding: 2em;
+}
+
+.blog-posts {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  flex: 1;
+  padding: 0 1em 1em 1em;
+  margin: 1em 0;
+  max-width: 32em;
+}
+
+.recent {
+  background-color: #cfcfd1;
 }
 
 rect, line {
@@ -99,4 +123,21 @@ rect, line {
     text-align: left;
   }
 
+  .blog-wrapper {
+    margin: 8em auto;
+  }
+}
+
+@media (min-width: 66em) {
+  .blog-posts {
+    flex-direction: row;
+  }
+
+  .post {
+    margin: 1em;
+  }
+
+  .recent {
+    margin: 1em 2em 1em 1em;
+  }
 }
