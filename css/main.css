@@ -34,6 +34,8 @@ header {
   flex-direction: column;
   padding-top: 1.5em;
   margin: 0 1em;
+  position: fixed;
+  width: 100%;
 }
 
 .logo, nav {
@@ -71,6 +73,11 @@ footer {
 
 footer img {
   height: 2em;
+}
+
+.fixed {
+  background-color: white;
+  z-index: 1;
 }
 
 .hero {
