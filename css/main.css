@@ -33,7 +33,6 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 1.5em;
-  margin: 0 1em;
   position: fixed;
   width: 100%;
 }
@@ -41,6 +40,10 @@ header {
 .logo, nav {
   flex: 1;
   text-align: center;
+}
+
+.logo {
+  margin-left: 1.5em;
 }
 
 nav a:hover {
