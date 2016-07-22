@@ -1,5 +1,24 @@
 /*Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+	font-family: 'Galano Grotesque Medium';
+	src: url('../assets/fonts/GalanoGrotesque-Medium-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../assets/fonts/GalanoGrotesque-Medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../assets/fonts/GalanoGrotesque-Medium-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../assets/fonts/GalanoGrotesque-Medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../assets/fonts/GalanoGrotesque-Medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+  @font-face {
+  	font-family: 'Galano Grotesque Regular';
+  	src: url('../assets/fonts/GalanoGrotesque-Regular-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../assets/fonts/GalanoGrotesque-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	     url('../assets/fonts/GalanoGrotesque-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+  	     url('../assets/fonts/GalanoGrotesque-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  	     url('../assets/fonts/GalanoGrotesque-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
 
 /*CSS Reset*/
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
