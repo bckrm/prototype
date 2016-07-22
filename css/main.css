@@ -33,15 +33,16 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
+
 h1, .h1 {
   font-family: 'Galano Grotesque Medium';
   font-size: 2em;
   font-weight: normal;
-=======
+}
+
 body {
   font: 100%/150% 'Open Sans', sans-serif;
->>>>>>> gh-pages
+
 }
 
 h1, h2, h3 {
