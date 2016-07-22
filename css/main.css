@@ -21,29 +21,50 @@ body {
 h1, h2, h3 {
   font-weight: normal;
   margin: 1em 0;
+  line-height: 150%;
 }
 
 a {
   text-decoration: none;
-  color: white;
   padding: .25em;
+}
+
+#home a {
+  color: white;
+}
+
+#about a {
+  color: black;
+}
+
+blockquote {
+  width: 95%;
+  margin: auto;
+  padding: .5em 1.5em;
+  color: white;
+  background-color: #4B4D5D;
 }
 
 header {
   display: flex;
   flex-direction: column;
   padding-top: 1.5em;
-  position: fixed;
+}
+
+#home header {
   width: 100%;
+  margin: 0 auto;
+}
+
+#about header {
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .logo, nav {
   flex: 1;
   text-align: center;
-}
-
-.logo {
-  margin-left: 1.5em;
 }
 
 nav a:hover {
@@ -78,15 +99,27 @@ footer img {
   height: 2em;
 }
 
+.container {
+  margin: 8em auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
 .fixed {
   background-color: white;
   z-index: 1;
+  position: fixed;
 }
 
 .hero {
-  margin: auto auto 4em;
-  max-width: 32em;
+  margin: auto;
+  max-width: 44em;
   text-align: center;
+}
+
+.logo {
+  margin-left: 1.5em;
 }
 
 .recent {
@@ -94,18 +127,25 @@ footer img {
 }
 
 .wrapper {
-  background: url(/assets/img/hero.jpg) no-repeat center center;
-  background-size: cover;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  margin: 0;
+}
+
+.wrap-bg-img {
+  height: 100vh;
+  background: url(/assets/img/hero.jpg) no-repeat center center;
+  background-size: cover;
   color: white;
 }
 
 .main-content {
   width: 90%;
   margin: 8em auto;
+}
+
+.banner {
+  width: 75%;
+  text-align: center;
 }
 
 .blog-wrapper {
@@ -132,11 +172,43 @@ footer img {
   background-color: #cfcfd1;
 }
 
+.steps {
+  margin: 2em 0;
+}
+
+.about-placeholder {
+  height: 18em;
+  width: 18em;
+  background-color: gray;
+  border-radius: 3px;
+  margin: 2em auto;
+}
+
+.team-members img {
+  width: 20em;
+}
+
+/*Logo Styling*/
+
 rect, line {
   fill: transparent;
-  stroke: white;
   stroke-width: 5;
 }
+
+#about rect, line {
+  stroke: black;
+}
+
+#home rect, line {
+  stroke: white;
+}
+
+#team {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 @media (min-width: 32em){
 
@@ -150,6 +222,37 @@ rect, line {
 
   .blog-wrapper {
     margin: 8em auto;
+  }
+
+  #team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .team-members {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 48em){
+  .steps {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .content {
+    max-width: 32em;
+  }
+
+  .collab-content {
+
+  }
+
+  .collab-img {
+    order: -1;
   }
 }
 
