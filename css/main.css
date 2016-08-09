@@ -99,14 +99,14 @@ nav a:hover {
 
 nav ul {
   display: flex;
-
+	justify-content: flex-end;
 }
 
 nav li {
-  flex-grow: 1;
   list-style: none;
   text-align: center;
   font-size: 1.5em;
+	margin: .5em;
 }
 
 footer {
@@ -158,7 +158,7 @@ footer img {
 
 .wrap-bg-img {
   height: 100vh;
-  background: url(/assets/img/hero.jpg) no-repeat center center;
+  background: url(/assets/img/Throw-5.jpg) no-repeat center center;
   background-size: cover;
   color: white;
 }
