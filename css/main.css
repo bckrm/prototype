@@ -54,7 +54,7 @@ a {
   padding: .25em;
 }
 
-#home a {
+#index a {
   color: white;
 }
 
@@ -76,7 +76,7 @@ header {
   padding-top: 1.5em;
 }
 
-#home header {
+#index header {
   width: 100%;
   margin: 0 auto;
 }
@@ -156,14 +156,14 @@ footer img {
   display: flex;
 }
 
-.wrap-bg-img {
+#index>div {
   height: 100vh;
   background: url(/assets/img/Throw-5.jpg) no-repeat center center;
   background-size: cover;
   color: white;
 }
 
-.main-content {
+main {
   width: 90%;
   margin: 8em auto;
 }
@@ -224,7 +224,7 @@ rect, line {
   stroke: black;
 }
 
-#home rect, line {
+#index rect, line {
   stroke: white;
 }
 
