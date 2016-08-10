@@ -54,14 +54,6 @@ a {
   padding: .25em;
 }
 
-#index a {
-  color: white;
-}
-
-#about a {
-  color: black;
-}
-
 blockquote {
   width: 95%;
   margin: auto;
@@ -74,17 +66,6 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 1.5em;
-}
-
-#index header {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#about header {
-  border-bottom: 1px solid black;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .logo, nav {
@@ -109,16 +90,17 @@ nav li {
 	margin: .5em;
 }
 
+main {
+  width: 90%;
+  margin: 8em auto;
+}
+
 footer {
   width: 80%;
   border-top: 1px solid black;
   margin: 1em auto;
   padding: 1em;
 }
-
-/*footer a {
-  padding: 1em;
-}*/
 
 footer img {
   height: 2em;
@@ -154,18 +136,6 @@ footer img {
 .wrapper {
   height: 100vh;
   display: flex;
-}
-
-#index>div {
-  height: 100vh;
-  background: url(/assets/img/Throw-5.jpg) no-repeat center center;
-  background-size: cover;
-  color: white;
-}
-
-main {
-  width: 90%;
-  margin: 8em auto;
 }
 
 .banner {
@@ -212,6 +182,43 @@ main {
 .team-members img {
   width: 20em;
 }
+
+#about a {
+  color: black;
+}
+
+#about header {
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#index nav a {
+  color: white;
+}
+
+#index header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#index>div {
+  height: 100vh;
+  background: url(/assets/img/Throw-5.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+#button {
+	color: black;
+	background-color: white;
+	padding: .5em;
+	border: 1px solid black;
+	border-radius: 3px;
+	position: relative;
+	top: 2em;
+}
+
 
 /*Logo Styling*/
 
