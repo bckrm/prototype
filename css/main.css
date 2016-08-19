@@ -106,6 +106,16 @@ footer img {
   height: 2em;
 }
 
+.cb-hide {
+	margin-top: -4em;
+	transition: margin-top .5s ease-out;
+}
+
+.cb-show {
+	margin-top: 0;
+	transition: margin-top .5s ease-out;
+}
+
 .container {
   margin: 8em auto;
   display: flex;
@@ -193,6 +203,20 @@ footer img {
   margin: 0 auto;
 }
 
+#contact-bar {
+	background-color: #cfcfd1;
+	display: flex;
+	height: 4em;
+	justify-content:flex-end;
+	align-items: center;
+}
+
+#contact-bar a {
+	color: white;
+	text-decoration: none;
+	padding-right: 1em;
+}
+
 #index nav a {
   color: white;
 }
@@ -202,7 +226,7 @@ footer img {
   margin: 0 auto;
 }
 
-#index>div {
+#bg-img-wrapper {
   height: 100vh;
   background: url(/assets/img/Throw-5.jpg) no-repeat center center;
   background-size: cover;
