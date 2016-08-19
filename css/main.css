@@ -174,7 +174,7 @@ footer img {
 }
 
 .recent {
-  background-color: #cfcfd1;
+  background-color: #3c3c44;
 }
 
 .steps {
@@ -204,7 +204,7 @@ footer img {
 }
 
 #contact-bar {
-	background-color: #cfcfd1;
+	background-color: #3c3c44;
 	display: flex;
 	height: 4em;
 	justify-content:flex-end;
@@ -228,7 +228,7 @@ footer img {
 
 #bg-img-wrapper {
   height: 100vh;
-  background: url(/assets/img/Throw-7.jpg) no-repeat center center;
+  background: url(/assets/img/Throw-5.jpg) no-repeat center center;
   background-size: cover;
   color: white;
 }
